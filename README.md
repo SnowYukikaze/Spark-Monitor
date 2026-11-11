@@ -390,7 +390,7 @@ A：不支持。项目大量使用 Windows 专属 API（HID、SetupAPI、WinRT�
 | 中文名     | 星火 Monitor                                                                                   |
 | 英文名     | Spark Monitor                                                                                  |
 | 项目地址   | [https://github.com/SnowYukikaze/Spark-Monitor](https://github.com/SnowYukikaze/Spark-Monitor) |
-| 作者       | **SnowYukikaze**、**Nier**                                                                     |
+| 作者       | [**SnowYukikaze**](https://github.com/SnowYukikaze)、[**Nier**](https://github.com/2546372533) |
 | 原作者     | Ap0LoG1zE                                                                                      |
 | 原项目地址 | https://github.com/Ap0LoG1zE/EZ2.4G                                                            |
 | 许可       | [MIT](LICENSE.md)                                                                              |
