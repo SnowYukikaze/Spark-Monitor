@@ -1,0 +1,23 @@
+# 换行符约定
+#
+# Windows 批处理（.bat/.cmd）必须保持 CRLF：cmd.exe 按 ANSI 逐行解析，
+# 一旦变成 LF，括号块会解析失败、注释行可能被当成命令执行，
+# 表现就是「双击一闪而过、软件打不开」。
+*.bat   text eol=crlf
+*.cmd   text eol=crlf
+*.ps1   text eol=crlf
+
+# 源码与文档统一 LF，避免 diff 噪声
+*.py    text eol=lf
+*.md    text eol=lf
+*.txt   text eol=lf
+*.json  text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+
+# 二进制资源不要做任何换行转换
+*.png   binary
+*.jpg   binary
+*.ico   binary
+*.zip   binary
+*.exe   binary

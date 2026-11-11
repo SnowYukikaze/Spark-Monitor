@@ -1,0 +1,4 @@
+# 界面增强（背景图 / 透明度 / 色轮）需要 Pillow
+#   pip install -r requirements-ui.txt
+# 没装也能运行：选图入口会提示安装，其它功能不受影响。
+Pillow>=10.0

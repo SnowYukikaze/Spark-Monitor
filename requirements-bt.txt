@@ -1,0 +1,15 @@
+# 可选依赖：蓝牙 BLE 电量（GATT 0x180F / 0x2A19）
+#
+# 不装也能正常用：2.4G 和蓝牙 HID 走标准库，只有 BLE 电量读不到，
+# 卡片会显示「需要安装 winrt 才能读蓝牙电量」，不会崩、也不会拖慢启动。
+#
+#   pip install -r requirements-bt.txt
+#
+# 装完用 `python my_devices.py --scan` 确认第二段显示「蓝牙 BLE ... 台」。
+winrt-runtime
+winrt-Windows.Foundation
+winrt-Windows.Foundation.Collections
+winrt-Windows.Storage.Streams
+winrt-Windows.Devices.Enumeration
+winrt-Windows.Devices.Bluetooth
+winrt-Windows.Devices.Bluetooth.GenericAttributeProfile

@@ -1,0 +1,87 @@
+# MIT License
+
+Copyright (c) 2026 **SnowYukikaze** & **Nier**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## 中文说明（便于阅读，以上英文正文具法律效力）
+
+这份软件用 **MIT 许可**发布。用大白话说：
+
+**你可以：**
+
+- 随便用，个人用、公司用、拿去卖钱都可以；
+- 随便改，改成什么样都行，不需要经过作者同意；
+- 随便分发，可以原样发，也可以改完再发；
+- 把它放进你自己的项目里，开源或闭源都行。
+
+**你只需要：**
+
+- 保留上面那段版权声明和许可声明（通常在 `LICENSE` 文件里）；
+- 别把作者告上法庭——软件按「现状」提供，出问题作者不担责。
+
+**关于二改：**
+
+本项目**欢迎任何人fork、二改、再发布**，也**希望**二改后的版本同样开源，
+让更多人受益；但这只是**期望，不是强制要求**。你改完想闭源、想商用，
+MIT 许可都允许，作者不会追究。
+
+如果你愿意，改完可以在项目里提一句「基于 Spark Monitor 修改」——
+不写也不影响你的任何权利，纯粹是给后来者指条路。
+
+---
+
+## 第三方资料来源与致谢
+
+本项目的设备读取逻辑在编写与校订时，参考了以下**公开资料中的事实**：
+
+| 资料 | 用途 | 说明 |
+|---|---|---|
+| Logitech / cpg-docs（罗技官方公开协议文档仓库，GitHub） | HID++ 2.0 规范口径 | 官方公开发布 |
+| OpenLogi「HID++ Reference」（openlogi.org/hidpp，含 0x1004 unifiedBattery 页） | 充电状态码、能力位、报文格式的交叉核对 | 该项目声明为其原创整理的摘要；本项目仅参考公开事实，**未复制其文档文字或代码** |
+| Linux 内核 `hid-logitech-hidpp`（GPL-2.0）、Solaar（GPL-2.0） | 0x1004 与旧特性的实现思路 | **仅参考思路，未引入任何 GPL 代码** |
+| OpenLogi 项目 README 的安装提示 | 「同一接收器同一时间只能被一个程序占用」这一事实 | 用于解释并提示接收器被 G HUB / Options+ 占用的情形 |
+| 机械师 L8 Driver 自带的通信日志（`Iton_HIDMOU_Com_x86`） | 状态报告 `0x50` 的字段位置 | 本机驱动运行时产生的日志，仅参考其中的报文格式 |
+| 觅声 O HUB 客户端（Electron）的公开可读代码 | 音频控制通道读电量的 IOCTL 与命令码 | 仅参考协议事实，未复制其代码 |
+
+说明：
+
+- 本项目**没有并入、复制或改写上述项目的任何源代码**；`ez24g/` 下代码为本项目自行编写。
+- 上述资料与名称的版权、商标归各自权利人所有；本项目的 MIT 授权
+  **只覆盖本项目自身的代码与文档，不覆盖任何第三方资料**。
+- 「Logitech」「G HUB」「Options+」「Unifying」「Logi Bolt」等为 Logitech
+  International S.A. 的商标；「Misiom」「觅声」「机械师 / Machenike」等为各自
+  权利人的商标。本项目与上述公司均无关联、未获其授权或背书。
+- 本项目未引入 GPL 授权的实现：GPL 要求衍生作品同样以 GPL 发布，与本项目的
+  MIT 授权不兼容。宽松授权（MIT / Apache-2.0 / 0BSD）的代码若将来被引入，
+  将在此处补全对应的原作者署名与许可声明。
+
+---
+
+## 项目信息
+
+| 项目 | 内容 |
+|---|---|
+| 中文名 | 星火 Monitor |
+| 英文名 | Spark Monitor |
+| 项目地址 | <https://github.com/SnowYukikaze/Spark-Monitor> |
+| 作者 | SnowYukikaze、Nier |
+| 许可 | MIT |
